@@ -1,5 +1,5 @@
 function radianToDegree(radian){
-    const Degree = radian*57.2957795;
+    const Degree = radian * 57.2957795;
     return Degree;
 }
 

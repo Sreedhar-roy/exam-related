@@ -1,12 +1,11 @@
-function oilPrice(dieselPrice, petrolPrice, octanePrice){
-    const totalPrice = dieselPrice + petrolPrice + octanePrice;
-    const average = totalPrice / 3;
-    return average;
+function oilPrice(dieselContainer, petrolContainer, octaneContainer){
+    const totalPrice = dieselContainer*dieselOilPrice + petrolContainer*petrolOilPrice + octaneContainer*octaneOilPrice;
+    return totalPrice;
 }
 
-const dieselOilPrice = 60;
-const petrolOilPrice = 58;
-const octaneOilPrice = 59;
+const dieselOilPrice = 0;
+const petrolOilPrice = 2;
+const octaneOilPrice = 3;
 
-const averagePrice = oilPrice(dieselOilPrice, petrolOilPrice, octaneOilPrice);
+const averagePrice = oilPrice(114, 130, 135);
 console.log('average oil price', averagePrice);
