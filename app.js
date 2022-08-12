@@ -1,13 +1,14 @@
-function isJavaScriptFile(String){
+function isJavaScriptFile(string){
 
-    if(String == ".js"){
-        // return 'thae file';
-        console.log('yes');
+    ar= string.split(".");
+
+    if(ar[1] == "js"){
+        console.log("True");
     }
     else{
-        // return 'file error';
+        console.log("False");
     }
+
 }
-isJavaScriptFile();
-// const JavaScriptFile = isJavaScriptFile("app.js");
-// console.log(JavaScriptFile)
+// x= isJavaScriptFile("this.pg");
+console.log(isJavaScriptFile("this.js"));
