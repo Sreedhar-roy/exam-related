@@ -3,12 +3,11 @@ function isJavaScriptFile(string){
     ar= string.split(".");
 
     if(ar[1] == "js"){
-        console.log("True");
+        return true;
     }
     else{
-        console.log("False");
+        return '"Please enter the correct file name (.js)"';
     }
-
 }
-// x= isJavaScriptFile("this.pg");
-console.log(isJavaScriptFile("this.js"));
+const ScriptFile = isJavaScriptFile("this.jsw");
+console.log(ScriptFile);
