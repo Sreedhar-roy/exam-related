@@ -6,8 +6,8 @@ function isJavaScriptFile(string){
         return true;
     }
     else{
-        return '"Please enter the correct file name (.js)"';
+        return 'false, "Please enter the correct file name"';
     }
 }
-const ScriptFile = isJavaScriptFile("this.jsw");
+const ScriptFile = isJavaScriptFile("app.js");
 console.log(ScriptFile);

@@ -9,7 +9,7 @@ function isBestFriend (fr1,fr2){
     }
     else
     {
-        return false;
+        return ' false, "Please enter your correct friend name"';
     }
 }
 uniqueFriend = isBestFriend(bestFrient1,bestFrient2);
